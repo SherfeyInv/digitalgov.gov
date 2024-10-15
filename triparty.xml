@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://markets.newyorkfed.org/static/schema/referencerates.xsd">
+	<rates>
+
+		<rate>
+			<effectiveDate>2024-10-11</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.81</percentRate>
+			<percentPercentile1>4.76</percentPercentile1>
+			<percentPercentile25>4.81</percentPercentile25>
+			<percentPercentile75>4.81</percentPercentile75>
+			<percentPercentile99>4.83</percentPercentile99>
+			<volumeInBillions>772</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-10</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.81</percentRate>
+			<percentPercentile1>4.75</percentPercentile1>
+			<percentPercentile25>4.81</percentPercentile25>
+			<percentPercentile75>4.81</percentPercentile75>
+			<percentPercentile99>4.84</percentPercentile99>
+			<volumeInBillions>769</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-09</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.82</percentRate>
+			<percentPercentile1>4.77</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.82</percentPercentile75>
+			<percentPercentile99>4.85</percentPercentile99>
+			<volumeInBillions>768</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-08</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.83</percentRate>
+			<percentPercentile1>4.77</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.83</percentPercentile75>
+			<percentPercentile99>4.85</percentPercentile99>
+			<volumeInBillions>771</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-07</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.82</percentRate>
+			<percentPercentile1>4.77</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.82</percentPercentile75>
+			<percentPercentile99>4.84</percentPercentile99>
+			<volumeInBillions>773</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-04</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.82</percentRate>
+			<percentPercentile1>4.77</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.83</percentPercentile75>
+			<percentPercentile99>4.86</percentPercentile99>
+			<volumeInBillions>779</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-03</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.82</percentRate>
+			<percentPercentile1>4.78</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.83</percentPercentile75>
+			<percentPercentile99>4.93</percentPercentile99>
+			<volumeInBillions>787</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-02</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.87</percentRate>
+			<percentPercentile1>4.78</percentPercentile1>
+			<percentPercentile25>4.86</percentPercentile25>
+			<percentPercentile75>4.87</percentPercentile75>
+			<percentPercentile99>5.06</percentPercentile99>
+			<volumeInBillions>777</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-10-01</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.92</percentRate>
+			<percentPercentile1>4.80</percentPercentile1>
+			<percentPercentile25>4.90</percentPercentile25>
+			<percentPercentile75>4.92</percentPercentile75>
+			<percentPercentile99>4.98</percentPercentile99>
+			<volumeInBillions>771</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-30</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.88</percentRate>
+			<percentPercentile1>4.80</percentPercentile1>
+			<percentPercentile25>4.86</percentPercentile25>
+			<percentPercentile75>4.88</percentPercentile75>
+			<percentPercentile99>4.95</percentPercentile99>
+			<volumeInBillions>742</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-27</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.83</percentRate>
+			<percentPercentile1>4.78</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.83</percentPercentile75>
+			<percentPercentile99>4.87</percentPercentile99>
+			<volumeInBillions>753</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-26</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.83</percentRate>
+			<percentPercentile1>4.76</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.83</percentPercentile75>
+			<percentPercentile99>4.85</percentPercentile99>
+			<volumeInBillions>747</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-25</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.83</percentRate>
+			<percentPercentile1>4.75</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.83</percentPercentile75>
+			<percentPercentile99>4.86</percentPercentile99>
+			<volumeInBillions>756</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-24</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.83</percentRate>
+			<percentPercentile1>4.76</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.83</percentPercentile75>
+			<percentPercentile99>4.85</percentPercentile99>
+			<volumeInBillions>768</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-23</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.82</percentRate>
+			<percentPercentile1>4.75</percentPercentile1>
+			<percentPercentile25>4.82</percentPercentile25>
+			<percentPercentile75>4.82</percentPercentile75>
+			<percentPercentile99>4.85</percentPercentile99>
+			<volumeInBillions>781</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-20</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.81</percentRate>
+			<percentPercentile1>4.75</percentPercentile1>
+			<percentPercentile25>4.81</percentPercentile25>
+			<percentPercentile75>4.82</percentPercentile75>
+			<percentPercentile99>4.84</percentPercentile99>
+			<volumeInBillions>789</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-19</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>4.81</percentRate>
+			<percentPercentile1>4.75</percentPercentile1>
+			<percentPercentile25>4.81</percentPercentile25>
+			<percentPercentile75>4.81</percentPercentile75>
+			<percentPercentile99>5.34</percentPercentile99>
+			<volumeInBillions>815</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-18</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.32</percentRate>
+			<percentPercentile1>5.24</percentPercentile1>
+			<percentPercentile25>5.31</percentPercentile25>
+			<percentPercentile75>5.32</percentPercentile75>
+			<percentPercentile99>5.39</percentPercentile99>
+			<volumeInBillions>783</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-17</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.33</percentRate>
+			<percentPercentile1>5.27</percentPercentile1>
+			<percentPercentile25>5.33</percentPercentile25>
+			<percentPercentile75>5.33</percentPercentile75>
+			<percentPercentile99>5.39</percentPercentile99>
+			<volumeInBillions>770</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-16</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.33</percentRate>
+			<percentPercentile1>5.28</percentPercentile1>
+			<percentPercentile25>5.33</percentPercentile25>
+			<percentPercentile75>5.34</percentPercentile75>
+			<percentPercentile99>5.36</percentPercentile99>
+			<volumeInBillions>783</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-13</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.32</percentRate>
+			<percentPercentile1>5.26</percentPercentile1>
+			<percentPercentile25>5.31</percentPercentile25>
+			<percentPercentile75>5.32</percentPercentile75>
+			<percentPercentile99>5.34</percentPercentile99>
+			<volumeInBillions>779</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-12</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.31</percentRate>
+			<percentPercentile1>5.25</percentPercentile1>
+			<percentPercentile25>5.31</percentPercentile25>
+			<percentPercentile75>5.31</percentPercentile75>
+			<percentPercentile99>5.33</percentPercentile99>
+			<volumeInBillions>785</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-11</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.31</percentRate>
+			<percentPercentile1>5.25</percentPercentile1>
+			<percentPercentile25>5.31</percentPercentile25>
+			<percentPercentile75>5.31</percentPercentile75>
+			<percentPercentile99>5.34</percentPercentile99>
+			<volumeInBillions>769</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-10</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.31</percentRate>
+			<percentPercentile1>5.26</percentPercentile1>
+			<percentPercentile25>5.31</percentPercentile25>
+			<percentPercentile75>5.32</percentPercentile75>
+			<percentPercentile99>5.35</percentPercentile99>
+			<volumeInBillions>766</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+
+		<rate>
+			<effectiveDate>2024-09-09</effectiveDate>
+			<type>TGCR</type>
+			<percentRate>5.32</percentRate>
+			<percentPercentile1>5.25</percentPercentile1>
+			<percentPercentile25>5.32</percentPercentile25>
+			<percentPercentile75>5.33</percentPercentile75>
+			<percentPercentile99>5.35</percentPercentile99>
+			<volumeInBillions>768</volumeInBillions>
+			<revisionIndicator></revisionIndicator>
+		</rate>
+</rates>
+</markets>
