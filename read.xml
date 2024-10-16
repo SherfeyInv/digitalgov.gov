@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://markets.newyorkfed.org/static/schema/fxSwaps.xsd">
+<fxSwaps>
+	<operations>
+
+		<operation>
+			<operationType>U.S. Dollar Liquidity Swap</operationType>
+			<counterparty>Bank of England</counterparty>
+			<currency>USD</currency>
+			<tradeDate>2024-10-09</tradeDate>
+			<settlementDate>2024-10-10</settlementDate>
+			<maturityDate>2024-10-17</maturityDate>
+			<termInDays>7</termInDays>
+			<amount>5000000.0</amount>
+			<interestRate>5.08</interestRate>
+			<isSmallValue></isSmallValue>
+			<lastUpdated>2024-10-10 16:00</lastUpdated>
+		</operation>
+
+		<operation>
+			<operationType>U.S. Dollar Liquidity Swap</operationType>
+			<counterparty>European Central Bank</counterparty>
+			<currency>USD</currency>
+			<tradeDate>2024-10-09</tradeDate>
+			<settlementDate>2024-10-10</settlementDate>
+			<maturityDate>2024-10-17</maturityDate>
+			<termInDays>7</termInDays>
+			<amount>1.535E+8</amount>
+			<interestRate>5.08</interestRate>
+			<isSmallValue></isSmallValue>
+			<lastUpdated>2024-10-10 16:00</lastUpdated>
+		</operation>
+</operations>
+</fxSwaps>
+</markets>
