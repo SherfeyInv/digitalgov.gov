@@ -43,7 +43,7 @@ community_list:
     subscribe_email: "fmwc-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the Multilingual Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 765
+    members: 892
     join_cop_button: "Multilingual community members"
 
 kicker: "Communities of practice"
@@ -57,4 +57,4 @@ Become a member to meet the growing demand for government information and servic
 
 Digital.gov fosters this unique community by providing spaces designed to collaborate to solve common issues, offer translation best practices, define terminology, and be a resource to each other. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/multilingual" >}}
+{{< featured-resource link="topics/multilingual" kicker="Featured topic" >}}

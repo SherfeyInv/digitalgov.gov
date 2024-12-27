@@ -23,7 +23,7 @@ community_list:
     subscribe_email: "g3c-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the Contact Center Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 410
+    members: 462
     join_cop_button: "Contact center community members"
 
 # Controls how this page appears across the site
@@ -48,4 +48,4 @@ Become a member to explore methods of service delivery that improve customer exp
 
 Digital.gov fosters this passionate community by providing spaces designed to host educational forums and discussions. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/contact-centers" >}}
+{{< featured-resource link="topics/contact-centers" kicker="Featured topic" >}}

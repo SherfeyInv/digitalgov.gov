@@ -21,6 +21,7 @@ topics:
   - plain-language
   - social-media
   - communication
+  - open-government
 
 event_cop: communicators
 
@@ -30,7 +31,7 @@ community_list:
     subscribe_email: "fcn-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the Communicators Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 2,554
+    members: 2,774
     join_cop_button: "Communicators community members"
 
 # Controls how this page appears across the site
@@ -42,6 +43,8 @@ weight: 1
 aliases:
   - /communities/federal-communicators-network/
 
+kicker: "Communities of Practice"
+
 ---
 
 Government professionals from all levels come together in this community to improve written and verbal communication to make government communication more effective.
@@ -50,4 +53,4 @@ Become a member to network with subject matter experts with extensive experience
 
 Digital.gov fosters this essential community by providing spaces designed to share best practices, resources, and networking opportunities. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/communication/" kicker="Featured resource" >}}
+{{< featured-resource link="topics/communication/" kicker="Featured topic" >}}

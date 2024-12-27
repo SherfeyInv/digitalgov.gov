@@ -44,7 +44,7 @@ community_list:
     subscribe_email: "analyze-optimize-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the Web Analytics Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 1,146
+    members: 1,294
     join_cop_button: "Web Analytic community members"
 
 kicker: "Communities of Practice"
@@ -58,4 +58,4 @@ Become a member to uncover best practices, tips, and tools for web analytics, se
 
 Digital.gov fosters this dynamic community by providing spaces to engage in collaborative discussion and share new technology and trends. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/analytics" >}}
+{{< featured-resource link="topics/analytics" kicker="Featured topic" >}}

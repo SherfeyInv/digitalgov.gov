@@ -36,7 +36,7 @@ community_list:
     subscribe_email: "ux-cop-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the User Experience Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 2,363
+    members: 2,567
     join_cop_button: "User Experience community members"
 
 # see all authors at https://digital.gov/authors
@@ -54,4 +54,4 @@ Become a member to share and learn how to produce efficient, effective, and usef
 
 Digital.gov fosters this lively community by providing spaces to help members connect, learn, and grow on their user experience journeys. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/user-experience" >}}
+{{< featured-resource link="topics/user-experience" kicker="Featured topic" >}}

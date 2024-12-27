@@ -65,7 +65,7 @@ community_list:
     subscribe_email: "content-managers-l-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the Web Managers Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 2,225
+    members: 2,294
     join_cop_button: "Web Manager community members"
 
 primary_image: "communities-card-web-mgrs"
@@ -79,4 +79,4 @@ Become a member to learn more about creating, managing, and contributing to gove
 
 Digital.gov fosters this fundamental community by providing spaces for sharing ideas, challenges, lessons learned, and best practices for managing government websites and digital services. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/digital-service-delivery" >}}
+{{< featured-resource link="topics/digital-service-delivery" kicker="Featured topic" >}}

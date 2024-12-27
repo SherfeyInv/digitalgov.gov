@@ -37,7 +37,7 @@ community_list:
     subscribe_email: "sm-cop-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the Social Media Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 1,596
+    members: 1,760
     join_cop_button: "Social Media community members"
 
 kicker: "Communities of Practice"
@@ -51,4 +51,4 @@ Become a member to spark new ideas, connect, and collaborate.
 
 Digital.gov fosters this vibrant community by providing spaces designed to empower members on their digital and social media journeys. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/social-media" >}}
+{{< featured-resource link="topics/social-media" kicker="Featured topic" >}}

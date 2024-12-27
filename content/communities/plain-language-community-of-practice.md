@@ -46,7 +46,7 @@ community_list:
     subscribe_email: "pl-cop-main-request@listserv.gsa.gov"
     subscribe_email_subject: "Join the Plain Language Community"
     terms: "Government employees and contractors with an official .gov or .mil email are eligible to join."
-    members: 2,550
+    members: 2,818
     join_cop_button: "Plain Language community members"
 
 kicker: "Communities of practice"
@@ -60,4 +60,4 @@ Become a member to collaborate with colleagues who are dedicated to the idea tha
 
 Digital.gov fosters this engaging community by providing spaces designed to empower members on their communication and plain language journeys. Remember, when participating in this community, you must follow [Digital.gov community guidelines](https://digital.gov/communities/community-guidelines/).
 
-{{< featured-resource link="topics/plain-language" >}}
+{{< featured-resource link="topics/plain-language" kicker="Featured topic" >}}
