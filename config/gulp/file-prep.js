@@ -1,4 +1,5 @@
 const { src, series } = require("gulp");
+const sharp = require("sharp");
 const del = require("del");
 const tap = require("gulp-tap");
 const sizeOf = require("image-size");
@@ -7,6 +8,7 @@ const path = require("path");
 
 const imageExtensions = [".jpg", ".png", ".jpeg"];
 const fileExtensions = [
+  ".csv",
   ".pdf",
   ".doc",
   ".docx",
@@ -21,10 +23,28 @@ const allExtensions = [...imageExtensions, ...fileExtensions];
 // removes . separator to read jpg,png,jpeg...
 const extensionsString = allExtensions
   .map((extension) => extension.replace(".", ""))
-  .join(","); 
+  .join(",");
 
 const imageRegex = /(png|jpg|jpeg)/;
-const fileRegex = /(doc|docx|pdf|ppt|pptx|pptm|xls|xlsx)/;
+const fileRegex = /(csv|doc|docx|pdf|ppt|pptx|pptm|xls|xlsx)/;
+
+/**
+ * Converts JPG images to PNG format
+ * @param {string} imagePath - path of the image file
+ */
+async function convertJpgToPng(imagePath) {
+  console.log(`Converting image ${imagePath} to PNG`);
+  const outputPath = imagePath.replace(/\.jpe?g$/i, ".png");
+
+  await sharp(imagePath).toFormat("png").toFile(outputPath);
+
+  // Check if the original JPG file exists before unlinking
+  if (fs.existsSync(imagePath)) {
+    fs.unlinkSync(imagePath); // Remove the original JPG file
+  }
+
+  return path.basename(outputPath);
+}
 
 /**
  * Object containing working folder paths used for lifecycle steps of uploading
@@ -53,32 +73,67 @@ function fileTidy(done) {
   let filetype = "";
   let paths = filePaths;
 
-  fs.readdir(paths.uploads, (err, files) => {
-    // process.stdout.write(files.length.toString() + "\n");
+  fs.readdir(paths.uploads, async (err, files) => {
+    if (err) {
+      console.error(
+        `Failed to read directory ${paths.uploads}: ${err.message}`
+      );
+      done(err);
+      return;
+    }
+
     for (let file of files) {
-      // checks for .pdf, .png
-      if (allExtensions.includes(path.extname(file))) {
-        // creates new normalized file name
-        newfileName = cleanFileName(file);
+      const fileExt = path.extname(file);
+      if (allExtensions.includes(fileExt)) {
         filetype = fileType(file);
+        const dirToProcess = paths[filetype].toProcess;
         // create working directories if they do not exist
         createDir(paths[filetype].toProcess, 3);
         if (filetype === "image") createDir(paths[filetype].processed, 3);
         // copies uploaded file to /to-process with new normalized name
-        fs.renameSync(
-          `${paths.uploads}/${file}`,
-          `${paths[filetype].toProcess}/${newfileName}`
-        );
+        // convert jpg to png
+        if (
+          (filetype === "image" && fileExt === ".jpg") ||
+          fileExt === ".jpeg"
+        ) {
+          let convertedPng = await convertJpgToPng(
+            path.join(paths.uploads, file)
+          ).catch((err) => {
+            console.error(
+              `Error converting image ${file} to PNG: ${err.message}`
+            );
+            return;
+          });
+          // ensure the folder for the process image exists.
+          if (convertedPng != file) {
+            file = convertedPng;
+          }
+        }
+        newfileName = cleanFileName(file);
+        const newFilePath = path.join(dirToProcess, newfileName);
+
+        // Rename and move the file to the new path
+        try {
+          console.log(
+            `Moving file from ${path.join(
+              paths.uploads,
+              file
+            )} to ${newFilePath}`
+          );
+          fs.renameSync(path.join(paths.uploads, file), newFilePath);
+        } catch (renameError) {
+          console.error(
+            `Error moving file from ${path.join(
+              paths.uploads,
+              file
+            )} to ${newFilePath}: ${renameError.message}`
+          );
+          continue;
+        }
       }
     }
-    if (err) {
-      process.output.write(
-        `Error cleaning and copying file [${file}]
-         Error message: ${err.message}`
-      );
-    }
+    done();
   });
-  done();
 }
 
 /**
@@ -117,8 +172,8 @@ function createDir(directoryPath, foldersDeep) {
 
 /**
  * Checks the file extension and returns a string value of file or image
- * @param {String} extension - file name extension (.pdf, .png, etc...)
- * @returns a string value of image or file
+ * @param {string} extension - file name extension (.pdf, .png, etc...)
+ * @returns {string} a string value of image or file
  */
 function fileType(extension) {
   if (fileRegex.test(extension)) return "file";
@@ -137,7 +192,7 @@ function cleanFileName(origfilename) {
     .toLowerCase()
     .replace(/[ &$_#!?.]/g, "-")
     .replace(/-+/g, "-") // multiple dashes to a single dash
-    .replace(/-(png|jpg|jpeg|pdf|doc|docx|ppt|pptx|pptm|xls|xlsx)/g, ".$1") // remove trailing dashes
+    .replace(/-(csv|png|jpg|jpeg|pdf|doc|docx|ppt|pptx|pptm|xls|xlsx)/g, ".$1") // remove trailing dashes
     .replace(/\.jpeg$/g, ".jpg") // .jpeg to .jpg
     .replace(/-\d{2,4}x\d{2,4}(?=\.jpg)/g, "") // strip trailing dimensions
     .replace(/^\d{2,4}-*x-*\d{2,4}-*/g, "") // strip leading dimensions
@@ -223,7 +278,7 @@ function writeDataFile() {
 function fileData(format, uid) {
   return `
   # https://s3.amazonaws.com/digitalgov/static/${uid}.${format}
-  # File shortcode: {{< asset-static file="${uid}.${format}" label="${uid} (PDF, 4 pages, 2MB)">}}
+  # File shortcode: {{< asset-static file="${uid}.${format}" label="${uid} (PDF, 4 pages, 2MB)" >}}
   date     :  ${getCurrentDate()}
   uid      :  ${uid}
   format   :  ${format}
@@ -240,15 +295,24 @@ function fileData(format, uid) {
 function imageData(format, uid, dimensions) {
   return `
   # https://s3.amazonaws.com/digitalgov/${uid}.${format}
-  # Image shortcode: {{< img src=${uid} >}}'
+  # Image shortcode: {{< img src="${uid}" >}}'
   date     :  ${getCurrentDate()}
   uid      :  ${uid}
   width    :  ${dimensions.width}
   height   :  ${dimensions.height}
   format   :  ${format}
-  credit   :  
-  caption  :  
-  alt      :  
+
+  # REQUIRED alternative text for accessibility.
+  # Keep within 150 characters. https://capitalizemytitle.com/character-counter/ will count characters.
+  alt      :  ""
+
+  # Caption text appears below the image; usually the attribution for stock images.
+  # Must be different from the alt text.
+  caption  :  ""
+
+  # Credit text appears after the caption text, separated by an m-dash.
+  # Example https://digital.gov/2023/12/08/making-gsa-public-art-collection-more-accessible/ 
+  credit   :  ""
   `;
 }
 

@@ -41,7 +41,7 @@ When the report looked at page load speed, it took desktop and mobile page speed
 
 Performance (load time) for Web pages has become so important that [Google now considers it]({{< ref "2016-03-29-google-will-rank-mobile-friendly-sites-even-higher-beginning-in-may.md" >}}) one of three equal components to good user experience, along with design and functionality, he noted.
 
-If you are looking to improve your performance, or just get a sense for how well your site is doing, [start with this article on Why Speed Matters]({{< ref "2015-09-16-speed-matters-optimizing-your-website-for-maximum-performance.md" >}}). It explains which metrics you should be measuring for and there is a [DigitalGov University]({{< ref "/about/digitalgov-university.md" >}}) (DGU) video course, Speed Matters: Web Design Performance Load Time (duration: 45 minutes), that details a number of free or low-cost testing tools for measuring performance.
+If you are looking to improve your performance, or just get a sense for how well your site is doing, [start with this article on Why Speed Matters]({{< ref "2015-09-16-speed-matters-optimizing-your-website-for-maximum-performance.md" >}}). It explains which metrics you should be measuring for and there is a [DigitalGov University](https://digital.gov/digitalgov-university/) (DGU) video course, Speed Matters: Web Design Performance Load Time (duration: 45 minutes), that details a number of free or low-cost testing tools for measuring performance.
 
 #### Resources & Tools
 
@@ -123,6 +123,6 @@ _Do you want more information on accessibility resources?_ [_Email us_](mailto:d
 
 **Disclaimer**: All references to specific brands and/or companies are used only for illustrative purposes and do not imply endorsement by the U.S. federal government or any federal government agency.
 
-*Federal agencies can register their mobile products—mobile websites and native apps—on the [_U.S. Digital Registry_](https://usdigitalregistry.digitalgov.gov/) to verify that they’re [mobile-friendly]({{< ref "2015-10-23-is-your-site-mobile-friendly.md" >}}), authoritative sources of government information. [Learn more about the Registry]({{< ref "2016-02-29-is-your-federal-mobile-app-or-website-in-the-us-digital-registry.md" >}}) (there’s also an instructional webinar, and [sign up here]({{< ref "service_us-digital-registry.md" >}})).*
+*Federal agencies can register their mobile products—mobile websites and native apps—on the [_U.S. Digital Registry_](https://usdigitalregistry.digitalgov.gov/) to verify that they’re [mobile-friendly]({{< ref "2015-10-23-is-your-site-mobile-friendly.md" >}}), authoritative sources of government information. [Learn more about the Registry](https://digital.gov/topics/social-media/) (there’s also an instructional webinar, and [sign up here](https://touchpoints.app.cloud.gov/registry)).*
 
 *If you have a .gov or .mil email address and would like to connect with other feds in these fields, check out our [Communities]({{< ref "/communities" >}}) page to find out how to join the Listservs for MobileGov, Government Customer Experience (CX), User Experience (UX), Web Content Managers, and more.*

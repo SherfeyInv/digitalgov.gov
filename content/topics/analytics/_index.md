@@ -13,26 +13,24 @@ summary: "Web analytics provide valuable insights into how users interact with a
 aliases:
   - /topics/analytics-usa-gov
   - /topics/data/
-
-# Weight
-weight: 2
-
-aliases:
   - /topics/big-data/
   - /topics/dap/
   - /topics/digital-analytics-program/
   - /topics/google-analytics/
   - /topics/metrics/
 
+# Weight
+weight: 2
+
 # Set the legislation card title and link
 legislation:
-  title: "M-10-22, Guidance for Online Use of Web Measurement and Customization Technologies (PDF, 130 KB, 9 pages, June 2010)"
-  link: "https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2010/m10-23.pdf"
+  title: "Executive Order 14058 and OMB Circular A-11 Section 280"
+  link: "https://digital.gov/resources/requirements-for-transforming-federal-customer-experience-and-service-delivery/" 
 
-# Featured resource to at the top of the page
+# Featured resource to display at the top of the page
 featured_resources:
   resources:
-    - link: "/guides/dap/"
+  - link: "/guides/dap"
 
 # Featured community to display at the top of the page
 featured_communities:
@@ -41,8 +39,11 @@ featured_communities:
 
 # Curated list of content, can be internal or external links
 featured_links:
-  title: "Analytics: essential knowledge"
+  title: "Analytics: Essential knowledge"
   resources:
+  - title: "An introduction to analytics"
+    summary: "Learn how to set performance goals, and identify specific KPIs and targets to measure and meet them, using web analytics."
+    href: "https://digital.gov/resources/an-introduction-to-analytics/"
   - title: "How to build an analytics strategy"
     summary: "The Digital Analytics Program (DAP) provides a start-to-finish approach for assessing, reporting, and taking action using Digital.gov in a case study."
     href: "https://digital.gov/resources/how-to-build-an-analytics-strategy/"

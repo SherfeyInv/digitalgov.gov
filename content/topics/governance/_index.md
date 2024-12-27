@@ -18,10 +18,6 @@ legislation:
   title: "21st Century IDEA & M-23-22"
   link: "/resources/delivering-digital-first-public-experience/"
 
-# Featured resource to at the top of the page
-featured_resources:
-  resources:
-    - link: ""
 
 # Featured community to display at the top of the page
 featured_communities:
@@ -29,8 +25,11 @@ featured_communities:
 
 # Curated list of content, can be internal or external links
 featured_links:
-  title: "Governance: essential knowledge"
+  title: "Governance: Essential knowledge"
   resources:
+  - title: "An introduction to federal website standards"
+    summary: "Understand how and why to use the federal website standards. The standards cover common visual technical elements and reflect user experience best practices."
+    href: "https://digital.gov/resources/introduction-to-federal-web-standards/"
   - title: "An introduction to digital governance"
     summary: "Get an overview of the internal systems and processes used to manage digital presence."
     href: "https://digital.gov/resources/an-introduction-to-digital-governance/"

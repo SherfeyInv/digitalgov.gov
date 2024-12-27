@@ -12,10 +12,6 @@
               <h2 class="deck">{{- .Params.deck | markdownify -}}</h2>
             {{- end -}}
 
-
-            <div class="join-buttons">
-              <a href="{{- "/join" | absURL -}}">Write for us</a>
-            </div>
           </header>
         </div>
       </div>
@@ -51,22 +47,8 @@
             {{- end -}}
 
             {{- if eq .Type "news" -}}
-              {{/* External links */}}
-              {{- if .Params.source -}}
-                {{/* see /layouts/news/ for card templates */}}
-                {{ .Render "card-elsewhere" }}
-              {{ else }}
-                {{/* Blog Posts — Internal links */}}
-                {{- if .Params.deck }}
-                  {{/* see /layouts/news/ for card templates */}}
-                  {{ .Render "card-article" }}
-                {{ else }}
-                  {{/* see /layouts/news/ for card templates */}}
-                  {{ .Render "card-article" }}
-                {{ end }}
-              {{ end }}
+              {{ .Render "card-news" }}
             {{- end -}}
-
           {{ end }}
         {{ end }}
         {{ partial "core/pagination.html" . }}

@@ -76,7 +76,7 @@ npm -v
 
 Using [Homebrew](https://docs.brew.sh/) is a quick and easy way to install Hugo. [Install Homebrew](https://docs.brew.sh/Installation) before getting started.
 
-#### Install Hugo 0.92.0
+#### Install Hugo 0.133.1
 
 [Read the HUGO quickstart guide »](https://gohugo.io/getting-started/quick-start/)
 
@@ -90,8 +90,21 @@ Quickly check your Hugo version at your terminal command line by running:
 hugo version
 ```
 
-**Note:** Digital.gov currently uses Hugo version 0.92.0. This is noted in our [.hugo-version](.hugo-version) file.
-If Hugo has released a new version, but digital.gov hasn't been upgraded to that version, you may get errors when building locally. It is possible to use Homebrew to download a previous version of Hugo. To do that follow these instructions: [Using Legacy Versions of the Hugo Static Site Generator](https://www.fernandomc.com/posts/brew-install-legacy-hugo-site-generator/)
+**Note:** Digital.gov currently uses Hugo version 0.133.1. This is noted in our [.hugo-version](.hugo-version) file.
+If Hugo has released a new version, but digital.gov hasn't been upgraded to that version, you may get errors when building locally. It is possible to use Homebrew to download a previous version of Hugo. To do that follow these instructions: 
+1.  Uninstall the current version with `brew uninstall hugo`
+2.  Visit
+    [<u>https://github.com/Homebrew/homebrew-core/blob/master/Formula/h/hugo.rb</u>](https://github.com/Homebrew/homebrew-core/blob/master/Formula/h/hugo.rb)
+3.  Click the “History” link
+4.  Find the “bottle” commit for the desired version (Ex: 'hugo: update 0.133.1' bottle)
+5.  Press the “View at this point in history” button
+6.  Press the “Raw” button
+7.  Right-click anywhere on the page and choose “Save as…”
+8.  Save hugo.rb to any directory (home, downloads, etc.)
+9.  Open a terminal
+10. CD into the directory where you saved the hugo.rb file
+11. Install with `brew install hugo.rb`
+12. Prevent automatic updates with `brew pin hugo`
 
 #### Setup
 
@@ -161,11 +174,56 @@ You would want to have the Hugo build running along with a `gulp` session in sep
 
 ### Images
 
-Images found in `content/images/inbox/` will be optimized and compressed and sent to an AWS S3 bucket for usage in your layouts and content. This is done by running the `gulp img` command. See the digital.gov wiki for [how to process images](https://github.com/GSA/digitalgov.gov/wiki/Adding-Images).
+Digital.gov uses a hybrid image processing system that combines Hugo's built-in image processing with AWS S3 storage:
+
+#### Image Processing System
+
+Images found in `content/images/inbox/` are handled in two ways simultaneously:
+1. Optimized and compressed then sent to an AWS S3 bucket via `gulp img`
+2. Processed by Hugo's built-in image processing to create responsive variants (800px and 1200px)
+
+This dual approach ensures:
+- Optimized image delivery through S3
+- Responsive image variants through Hugo
+- Fallback paths when either system isn't available
+- Support for external images through direct URLs
+
+#### Setting up AWS Credentials
+
+1. Copy the environment template:
+   ```bash
+   cp env.example .env
+   ```
+
+2. Add your AWS credentials to the `.env` file:
+   ```
+   AWS_ACCESS_KEY_ID=[your access key]
+   AWS_SECRET_ACCESS_KEY=[your secret key]
+   ```
+
+3. Mount the S3 bucket:
+   ```bash
+   npm run mount-s3
+   ```
+
+#### Using the Image Shortcode
+
+The `img` shortcode provides flexible image handling with both S3 and Hugo processing:
+
+```go
+{{< img src="path/to/image.jpg" alt="Description" align="center" caption="My caption" credit="Photo by John Doe" >}}
+```
+
+Parameters:
+- `src`: path to the image (required)
+- `alt`: alt text for accessibility (required)
+- `align`: alignment (left/center/right, optional)
+- `caption`: image caption (optional)
+- `credit`: image credit (optional)
 
 **Other helpful HUGO commands:**
 
-- `hugo build` — builds all the pages in the site, without creating a server
+- `hugo` — builds all the pages in the site, without creating a server
 - `hugo serve` — builds all of the pages in hugo and creates a local server at `http://localhost:1313/`
 - `hugo serve --templateMetricsHints` — for seeing where you can apply caching in templates and speed up the build time
   [See more in the Hugo docs »](https://gohugo.io/commands/hugo/)
@@ -229,3 +287,8 @@ alt=".+?")* >}}
 ^url: .+/([^/]+)\.md
 slug: $1
 ```
+
+### New Features
+- Communities of Practice Job Board
+  - [Development Guide](./themes/digital.gov/layouts/job-board/readme.md)
+  - [Demo](https://federalist-466b7d92-5da1-4208-974f-d61fd4348571.sites.pages.cloud.gov/preview/gsa/digitalgov.gov/kl-job-board-mvp/job-board/)

@@ -20,7 +20,6 @@ end_date: 2020-03-19 17:30:00 -0500
 topics: 
   - digital-service-delivery
   - design
-  - user-centered-design
   - human-centered-design
 
 # see all authors at https://digital.gov/authors
@@ -29,6 +28,7 @@ authors:
 
 # YouTube ID
 youtube_id: hib4EOonc0M
+youtube_title: "USWDS Monthly Call: Color Tokens Update (Mar 2020)"
 
 # Primary Image (for social media)
 primary_image: "uswds-2-illio-feature-image"

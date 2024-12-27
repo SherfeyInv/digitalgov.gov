@@ -23,10 +23,12 @@ legislation:
   title: "Plain Writing Act of 2010"
   link: "https://www.govinfo.gov/app/details/PLAW-111publ274"
 
-# Featured resource to at the top of the page
+# Featured resource to display at the top of the page
 featured_resources:
   resources:
-    - link: "https://www.plainlanguage.gov/"
+    - title: "Plainlanguage.gov"
+      summary: "Plain language makes it easier for the public to read, understand, and use government communications."
+      link: "https://www.plainlanguage.gov/"
 
 # Featured community to display at the top of the page
 featured_communities:
@@ -34,21 +36,20 @@ featured_communities:
 
 # Curated list of content, can be internal or external links
 featured_links:
-  title: "Plain language: essential knowledge"
+  title: "Plain language: Essential knowledge"
   resources:
-  - title: "An introduction to plain language"
-    href: "/resources/an-introduction-to-plain-language/"
-    summary: "Using plain language is required on all government websites and also creates a better user experience."
-  - title: "Plain language web writing tips"
-    href: "/resources/plain-language-web-writing-tips/"
-    summary: "On the web, people are in a hurry. They skim and scan, looking for fast answers to their questions, so it’s important to get to the point—quickly."
-  - title: "Lessons from the 2021 Federal Plain Language Report Card"
-    href: "resources/lessons-from-the-2021-federal-plain-language-report-card/"
-    summary: "What we learned from examples of web content that received both high and low scores."
-  - title: "OMB Final Guidance on Implementing the Plain Writing Act of 2010 (M-11-15)"
-    href: "resources/omb-final-guidance-on-implementing-the-plain-writing-act-of-2010-m-11-15/"
-    summary: "This memorandum provides final guidance on implementing the Act and is designed to promote the goals of the President’s Open Government Initiative."
-
+    - title: "An introduction to plain language"
+      href: "https://digital.gov/resources/an-introduction-to-plain-language/"
+      summary: "Using plain language is required on all government websites and also creates a better user experience."
+    - title: "Plain language web writing tips"
+      href: "https://digital.gov/resources/plain-language-web-writing-tips/"
+      summary: "On the web, people are in a hurry. They skim and scan, looking for fast answers to their questions, so it’s important to get to the point—quickly."
+    - title: "Lessons from the 2021 Federal Plain Language Report Card"
+      href: "https://digital.gov/resources/lessons-from-the-2021-federal-plain-language-report-card/"
+      summary: "What we learned from examples of web content that received both high and low scores."
+    - title: "OMB Final Guidance on Implementing the Plain Writing Act of 2010 (M-11-15)"
+      href: "https://digital.gov/resources/omb-final-guidance-on-implementing-the-plain-writing-act-of-2010-m-11-15/"
+      summary: "This memorandum provides final guidance on implementing the Act and is designed to promote the goals of the President’s Open Government Initiative."
 # For more information on managing topics,
 # see https://github.com/GSA/digitalgov.gov/wiki
 ---
