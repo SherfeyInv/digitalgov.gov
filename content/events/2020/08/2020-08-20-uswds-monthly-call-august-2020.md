@@ -21,7 +21,6 @@ topics:
   - digital-service-delivery
   - design
   - user-experience
-  - user-centered-design
   - human-centered-design
 
 # see all authors at https://digital.gov/authors
@@ -31,6 +30,7 @@ authors:
 
 # YouTube ID
 youtube_id: ZEeulpMFEvY
+youtube_title: "USWDS Monthly Call: UX Debt (Aug 2020)"
 
 # Primary Image (for social media)
 primary_image: "uswds-2-illio-feature-image"

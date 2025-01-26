@@ -19,7 +19,7 @@ end_date: 2019-09-18 16:00:00 -0500
 # see all topics at https://digital.gov/topics
 topics: 
   - product-and-project-management
-  - policy
+  - public-policy
 
 # see all authors at https://digital.gov/authors
 authors: 
@@ -27,6 +27,7 @@ authors:
 
 # YouTube ID
 youtube_id: h9gDpsVoQTI
+youtube_title: "How to Navigate the Complex World of Federal Digital Policy"
 
 # Page weight: controls how this page appears across the site
 # 0 -- hidden

@@ -15,13 +15,12 @@ topics:
   - best-practices
   - usability
   - human-centered-design
-  - user-centered-design
   - customer-experience
   - user-experience
   - design
   - innovation
   - content-strategy
-  - policy
+  - public-policy
 
 slug: progress-towards-delivering-a-digital-first-public-experience
 

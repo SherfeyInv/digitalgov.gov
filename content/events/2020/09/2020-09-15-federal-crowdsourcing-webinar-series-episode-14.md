@@ -21,7 +21,6 @@ end_date: 2020-09-15 16:00:00 -0500
 topics: 
   - design
   - open-data
-  - user-centered-design
   - human-centered-design
   - crowdsourcing-and-citizen-science
 
@@ -37,6 +36,7 @@ event_platform: zoom
 
 # YouTube ID
 youtube_id: lke2bkYIsdw
+youtube_title: "Federal Crowdsourcing Webinar Series, Episode 14:Putting Open Data to Work for America’s Communities"
 
 # Page weight: controls how this page appears across the site
 # 0 -- hidden

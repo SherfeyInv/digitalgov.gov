@@ -13,12 +13,27 @@ enableRobotsTXT: true
 enableEmoji: true
 enableGitInfo: true
 buildFuture: true
+refLinksErrorLevel: WARNING
 
-ignoreFiles:
-  - "^_template"
-  - "content/_tmp/*"
-  - "content/uploads/_inbox"
-  - "content/_archived/*"
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: data
+      target: data
+    - source: assets
+      target: assets
+    - source: i18n
+      target: i18n
+    - source: archetypes
+      target: archetypes
+    # Mount S3 bucket content as a global resource
+    - source: assets/s3-images
+      target: assets/s3-images
 
 sitemap:
   changefreq: "daily"
@@ -46,8 +61,6 @@ outputs:
   page: ["HTML", "JSON"]
   term: ["HTML", "RSS", "JSON"]
 
-# Goldmark is from Hugo 0.60 the default library used for Markdown.
-# Deprecated blackfriday was removed in https://github.com/GSA/digitalgov.gov/issues/5089
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
@@ -92,7 +105,6 @@ permalinks:
   events: "event/:year/:month/:day/:slug/"
 
 # Related Posts Config
-# See: https://gohugo.io/content-management/related/#default-configuration
 related:
   threshold: 100
   includeNewer: true
@@ -111,26 +123,30 @@ security:
 
 menu:
   primary:
-    - Name: "News"
-      Identifier: "news"
+    - Name: "Blogs"
+      Identifier: "blogs"
       URL: "/news/"
       Weight: 1
-    - Name: "Events"
-      Identifier: "events"
-      URL: "/events/"
-      Weight: 2
     - Name: "Resources"
       Identifier: "resources"
       URL: "/resources/"
       Weight: 3
+    - Name: "Events"
+      Identifier: "events"
+      URL: "/events/"
+      Weight: 2
     - Name: "Communities"
       Identifier: "communities"
       URL: "/communities/"
       Weight: 4
-    - Name: "Tools"
-      Identifier: "tools"
-      URL: "/services/"
-      Weight: 5
+    - Name: "Guides"
+      Identifier: "guides"
+      URL: "/guides/"
+      Weight: 4
+    - Name: "Job board"
+      Identifier: "job-board"
+      URL: "/job-board/"
+      Weight: 6
 
   contribute:
     - Name: "Write for us"
@@ -158,4 +174,8 @@ menu:
     - Name: "Contact Us"
       Identifier: "contact"
       URL: "/about/contact/"
+      Weight: 3
+    - Name: "Content schedule"
+      Identifier: "manage-content"
+      URL: "/about/manage-content/"
       Weight: 3

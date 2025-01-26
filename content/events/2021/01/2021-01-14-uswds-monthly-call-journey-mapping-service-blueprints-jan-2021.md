@@ -12,7 +12,6 @@ end_date: 2021-01-21 15:30:00 -0500
 topics:
   - design
   - digital-service-delivery
-  - user-centered-design
   - human-centered-design
   - customer-experience
   - user-experience
@@ -24,6 +23,7 @@ slug: uswds-monthly-call-journey-mapping-service-blueprints-jan-2021
 # zoom, youtube_live, adobe_connect, google
 event_platform: zoom
 youtube_id: PjmWA2IQDKY
+youtube_title: "USWDS Monthly Call: Journey Mapping and Service Blueprints (Jan 2021)"
 
 ---
 

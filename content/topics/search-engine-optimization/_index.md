@@ -5,7 +5,7 @@
 slug: "search-engine-optimization"
 
 # Topic Title
-title: "Search Engine Optimization"
+title: "Search engine optimization"
 deck: "Search engine optimization (SEO) is the practice of enabling search engines to index and surface content."
 
 # description — keep it short and clear
@@ -21,10 +21,6 @@ legislation:
   title: "21st Century Integrated Digital Experience Act & OMB Memo M-23-22"
   link: "https://digital.gov/resources/delivering-digital-first-public-experience/"
 
-# Featured resource to at the top of the page
-featured_resources:
-  resources:
-    - link: ""
 
 # Featured community to display at the top of the page
 featured_communities:

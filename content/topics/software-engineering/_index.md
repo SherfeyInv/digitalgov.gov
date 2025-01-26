@@ -5,7 +5,7 @@
 slug: "software-engineering"
 
 # Topic Title
-title: "Software Engineering"
+title: "Software engineering"
 deck: "Develop  websites and services that are secure, reliable, and easy to maintain."
 
 summary: "Federal websites are essential tools for unifying and communicating government information with the public in a timely manner. A well-developed website builds public trust in government and provides users with access to information when they need it.
@@ -31,19 +31,14 @@ legislation:
   title: "21st Century IDEA) & M-23-22"
   link: "https://digital.gov/resources/delivering-digital-first-public-experience/"
 
-# Featured resource to at the top of the page
-featured_resources:
-  resources:
-    - link: ""
-
 # Featured community to display at the top of the page
 featured_communities:
   - "web-managers-forum"
-  - "[U.S. Web Design System (USWDS) Community](https://designsystem.digital.gov/about/community/)" 
+  - "uswds"
 
 # Curated list of content, can be internal or external links
 featured_links:
-  title: "Software engineering: essential knowledge"
+  title: "Software engineering: Essential knowledge"
   resources:
   - title: "An introduction to GitHub"
     summary: "Understand how to create, manage, and publish website content in GitHub."

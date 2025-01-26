@@ -64,21 +64,12 @@
       {{ if $is_first_page }}
         <div class="dg-topic__featured grid-container-desktop">
           {{ range .Params.featured_resources.resources }}
-            {{ $featured_resource_page := $.GetPage .link }}
-            {{ $kicker := "" }}
-            {{ if $featured_resource_page.Params.kicker }}
-              {{ $kicker = $featured_resource_page.Params.kicker }}
-            {{ end }}
-            {{- partial "core/featured-resource.html" (dict "Site" $.Site "resourcePath" .link "kicker" $kicker) -}}
+            {{- partial "core/featured-resource.html" (dict "Site" $.Site "resource_data" .) -}}
           {{ end }}
 
           {{ range .Params.featured_communities }}
-            {{ $community_page := $.GetPage (printf "communities/%s" .) }}
-            {{ $kicker := "" }}
-            {{ if $community_page.Params.kicker }}
-              {{ $kicker = $community_page.Params.kicker }}
-            {{ end }}
-            {{- partial "core/featured-resource.html" (dict "Site" $.Site "resourcePath" (printf "/communities/%s" .) "kicker" $kicker ) -}}
+            {{ $community_page := (dict "link" (printf "communities/%s" .)) }}
+            {{- partial "core/featured-resource.html" (dict "Site" $.Site "resource_data" $community_page) -}}
           {{ end }}
         </div>
       {{ end }}
@@ -144,12 +135,7 @@
               <h2>{{ .Title }} news</h2>
 
               {{- range $featured_posts_stream -}}
-                {{- if .Params.source -}}
-                  {{/* Display external links, see layouts/news for news card template */}}
-                  {{- .Render "card-elsewhere" -}}
-                {{- else -}}
-                  {{ .Render "card-article" }}
-                {{- end -}}
+                {{ .Render "card-news" }}
               {{- end -}}
             {{- else -}}
               <h3>No News to Display</h3>
@@ -174,13 +160,7 @@
               {{- end -}}
 
               {{- if eq .Type "news" -}}
-                {{/* Display external links, see layouts/news for news card template */}}
-                {{- if .Params.source -}}
-                  {{ .Render "card-elsewhere" }}
-                {{ else }}
-                  {{/* Internal links */}}
-                  {{ .Render "card-article" }}
-                {{ end }}
+                {{ .Render "card-news" }}
               {{- end -}}
             {{- end -}}
           {{- end -}}
@@ -218,13 +198,7 @@
               {{- end -}}
 
               {{- if eq .Type "news" -}}
-                {{/* Display external links */}}
-                {{- if .Params.source -}}
-                  {{ .Render "card-elsewhere" }}
-                {{ else }}
-                  {{/* Internal links */}}
-                  {{ .Render "card-article" }}
-                {{ end }}
+                {{ .Render "card-news" }}
               {{- end -}}
             {{ end }}
             {{- partial "core/pagination.html" . -}}

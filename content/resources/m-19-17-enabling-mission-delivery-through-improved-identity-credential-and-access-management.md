@@ -7,7 +7,7 @@ summary: This 2019 memorandum sets forth the federal government's Identity, Cred
 # See all topics at https://digital.gov/topics
 topics:
   - security
-  - policy
+  - public-policy
 
 # Controls how this page appears across the site
 # 0 -- hidden
@@ -36,16 +36,16 @@ OMB rescinds the following with the release of this memorandum:
 1. M-04-04, E-Authentication Guidance for Federal Agencies
 2. M-05-05, Electronic Signatures: How to Mitigate the Risk ofCommercial Managed Services
 3. M-06-18, Acquisition ofProducts and Services for Implementation of HSPD-12
-4. M-11-11, Continued Implementation of Homeland Security Presidential Directive (HSPD) 12 - Policy for a Common Identification Standard for Federal Employees and Contractors
+4. M-11-11, Continued Implementation of Homeland Security Presidential Directive (HSPD) 12 - public-policy for a Common Identification Standard for Federal Employees and Contractors
 5. OMB Memorandum, Requirements/or Accepting Externally-Issued Identity Credentials, October 6, 2011
 
 ## Policy Assistance
 
 Address all questions or inquiries regarding this memorandum to the OMB Office ofthe Federal Chief Information Officer (OFCIO) via email: ofcio@omb.eop.gov.
 
-<footer>
-<h3 id="footnote-label">Footnotes</h3>
-<ol>
-<li id="fn1">This memorandum is not applicable to national security systems (NSS) as defined in 44 U.S.C. § 3552 (Federal Information Security Modernization Act of 2014), although OMB encourages owners and operators of NSS to utilize the requirements in this document where appropriate. <a href="#footnotes-ref1" aria-label="Back to content">↩</a></li>
+<div class="dg-footnote">
+<h3 class="dg-footnote__heading" id="footnote-label">Footnotes</h3>
+<ol class="dg-footnote__list">
+<li class="dg-footnote__list-item" id="fn1">This memorandum is not applicable to national security systems (NSS) as defined in 44 U.S.C. § 3552 (Federal Information Security Modernization Act of 2014), although OMB encourages owners and operators of NSS to utilize the requirements in this document where appropriate. <a href="#footnotes-ref1" aria-label="Back to content">↩</a></li>
 </ol>
-</footer>
+</div>

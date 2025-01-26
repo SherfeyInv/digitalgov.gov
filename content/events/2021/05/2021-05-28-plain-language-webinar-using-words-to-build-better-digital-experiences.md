@@ -19,9 +19,8 @@ topics:
   - communication
   - design
   - user-experience
-  - user-centered-design
   - human-centered-design
-  - policy
+  - public-policy
 # See all authors at https://digital.gov/authors
 authors:
   - katherine-spivey

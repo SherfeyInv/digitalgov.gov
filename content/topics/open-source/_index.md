@@ -5,10 +5,13 @@
 slug: "open-source"
 
 # Topic Title
-title: "Open Source"
+title: "Open source"
 
 # description — keep it short and clear
 summary: ""
+
+aliases:
+  - /2017/06/13/fractal-and-federalist-join-the-u-s-web-design-standards/
 
 
 # Weight

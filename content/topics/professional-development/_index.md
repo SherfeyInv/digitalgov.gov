@@ -5,7 +5,7 @@
 slug: "professional-development"
 
 # Topic Title
-title: "Professional Development"
+title: "Professional development"
 deck: "Acquire new skills and knowledge to improve your career performance and reach  your professional goals."
 
 # description — keep it short and clear
@@ -31,10 +31,10 @@ legislation:
   title: "The President’s Management Agenda: Workforce Priority"
   link: "https://www.performance.gov/pma/workforce/"
 
-# Featured resource to at the top of the page
+# Featured resource to display at the top of the page
 featured_resources:
   resources:
-    - link: "/open-opportunities"
+    - link: "open-opportunities"
 
 # Featured community to display at the top of the page
 featured_communities:

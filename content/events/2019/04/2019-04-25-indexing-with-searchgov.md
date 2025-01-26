@@ -22,6 +22,7 @@ authors:
 
 # YouTube ID
 youtube_id: zxyJVrxWVmg
+youtube_title: "Indexing with Search.gov"
 
 # Primary Image (for social media)
 primary_image: "searchdotgovlogo"
@@ -50,7 +51,7 @@ This talk is hosted by Search.gov and Digital.gov.
 
 [**Search.gov**](https://search.gov/) is a plug-and-play search solution that federal agencies can use to provide a high-quality search experience to their site’s users. Search.gov is a service of the General Services Administration, supporting the search boxes on over 2,000 websites, across 30% of federal domains.
 
-For more information about Search.gov, email [search@support.digitalgov.gov](mailto:search@support.digitalgov.gov), or call 202-969-7426.
+For more information about Search.gov, email [search@gsa.gov](mailto:search@gsa.gov), or call 202-969-7426.
 
 Questions about this event or future events? Send them to [digitalgov@gsa.gov](mailto:digitalgov@gsa.gov).
 
